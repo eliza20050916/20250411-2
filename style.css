@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+ul {
+  list-style: none; /* 移除預設的項目符號 */
+  padding: 0;
+  margin: 0;
+  display: flex; /* 水平排列 */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(254, 250, 224, 0.2); /* 選單背景顏色，透明度 0.2 */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+ul li {
+  padding: 0 30px; /* 項目之間的間距 */
+  height: 50px; /* 選項的高度 */
+  display: flex;
+  align-items: center; /* 垂直置中 */
+  cursor: pointer;
+  color: #d4a373; /* 文字顏色 */
+  font-family: 'Microsoft JhengHei', Arial, sans-serif; /* 文字字型 */
+  font-size: 30px; /* 文字大小 */
+  font-weight: 700; /* 字體粗細加粗到 25 (700 是對應的加粗值) */
+  border-right: 1px solid #ccc; /* 項目分隔線 */
+  background: #fefae0; /* 項目背景顏色 */
+  transition: color 0.3s, background 0.3s; /* 平滑過渡效果 */
+}
+
+ul li:last-child {
+  border-right: none; /* 移除最後一個項目的右邊框 */
+}
+
+ul li:hover {
+  color: #588157; /* 滑鼠移入時文字顏色 */
+}
